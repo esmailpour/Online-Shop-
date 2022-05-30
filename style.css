@@ -1,0 +1,347 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&diplay=swap');
+
+
+html{
+    height: 100%;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family:'Noto Sans Arabic',sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color:rgba(156, 83, 83, 0.13); 
+}
+.main-holder{
+   direction: rtl;
+    height: 520px;
+    width: 400px;
+    position: absolute;
+    display: grid;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(184, 179, 179, 0.1);
+    box-shadow: 0 0 40px rgba(139, 137, 150, 0.6);
+    padding: 40px 35px;
+    background-color: white;
+}
+
+h1{
+   text-align: center;
+   margin-top:2px;
+   margin-bottom: 2px;
+}
+
+.img-box{
+    
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.img-box img{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.login-form-field::placeholder {
+    color: #3a3a3a;
+}
+.login-form-field {
+    display: block;
+    height: 50px;
+    width: 90%;
+    background-color:rgba(156, 83, 83, 0.13); 
+    border-radius:15px;
+    padding: 0px 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+}
+#login-form-submit {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #e175eb;
+    color: #49274d;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+#login-error-msg{
+      text-align: center;
+      color: brown;
+      font-weight: bold;
+      opacity: 0;
+}
+  
+  /* ---products--page------------------------------------------ */
+  #descriptPage{
+      background-color: rgba(255, 255, 255, 0.767);
+  }
+  .main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+.heder-contain {
+    background-image: linear-gradient(to bottom left,rgb(209, 65, 202),rgb(241, 221, 243));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 30px;
+    flex-direction: row-reverse;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
+    
+}
+.text-heder{
+ margin: 0 auto;
+ align-self: center;
+ font-size:25px;
+ font-weight:bold;
+ color: #49274d;
+}
+.text-product-box{
+    margin-top: 100px;
+   text-align: right;
+   padding-right: 100px;
+   font-weight: 200;
+}
+.container{
+    
+    justify-content: center;
+    display: flex ;
+    flex-wrap: wrap;
+    margin: 30px;
+   
+}
+.product-box{
+    height: 450px;
+    width: 280px;
+    border:3px solid rgba(184, 179, 179, 0.1);
+   background-color: white;
+   padding: 0px 10px;
+   border-radius: 8px;
+   margin: 16px;
+}
+.product-box:hover {
+    outline: 3px solid #e578e9;
+   
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+
+
+}
+.product-img{
+    width: 220px;
+    height: 250px;
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-link{
+     transform: scale(1.05) translateY(-0.5rem);
+}
+.product-submit{
+    
+   width: 100%;
+   height: 45px;
+   padding: 2px;
+   background-color: #e175eb;
+   color: #ffffff;
+   font-size: 18px;
+   font-weight: 500;
+   border-radius: 15px;
+   cursor: pointer;
+   border:none;
+  
+
+}
+.product-text{
+     font-size: 14px;
+     width: 100%;
+     height: 100px;
+}
+.product-price{
+    
+    font-weight:900;
+    text-align: left;
+    direction: rtl;
+}
+.product-name{
+    padding: 0;
+    margin-top: 0;
+    text-align: right;
+    font-weight: 600;
+
+}
+
+/* ................................Descript Product .................*/
+.container-product{
+
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    padding-top: 100px;
+    direction: rtl;
+    
+   
+}
+.imge-product{
+    height: 450px;
+    width: 450px;
+   margin:20px 40px 0 0;
+}
+.imge-product img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.descript-product-box{
+    padding: 10px 30px 0 0;
+    
+    
+}
+.select-style {
+    padding: 0;
+    margin: 4px;
+    border: 1px solid #ccc;
+    width: 150px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+.select-style select {
+    padding: 2px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    
+}
+
+.select-style select:focus {
+    outline: none;
+}
+.size{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.vijegiha{
+    margin-top: 10px;
+    font-size: large;
+}
+.submit-box{
+    width: 150px;
+    
+}
+.products-submit{
+    margin-top:30px;
+    width: 100%;
+    height: 40px;
+    /* background-image: linear-gradient(to bottom ,rgb(192, 39, 184),rgb(192, 192, 176)); */
+    background-color: rgba(192, 39, 184, 0.767);
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    border:none;
+    
+    
+}
+.products-submit:hover{
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+        z-index: 20;
+}
+/*.......................................Add Product Page.............................................*/
+
+.add-Product-container{
+    width: 400px;
+    box-shadow: 0 0 40px rgba(139,137,150,60%);
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid rgb(184, 179, 179,0.1);
+
+
+}
+#container-product{
+    justify-content: center;
+}
+.add-Product-container *{
+    margin: 8px;
+    padding: 18px 10px;
+}
+.add-Product-container input[type=text],
+.add-Product-container textarea{
+border: none;
+outline: none;
+border-radius: 15px;
+background-color: rgba(156, 83, 83, 0.13);
+
+}
+.btn{
+   text-decoration: none;
+   display: block;
+   color: #131111; 
+   background-color: #e175eb;
+   padding: 8px;
+   font-size: 16px;
+   font-weight: 700;
+   border-radius: 10px;
+   text-align: center;
+}
+.btn:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.774);
+}
+
+.add-icon{
+    width: 30px;
+    height: 30px;
+}
+.add-icon-container a{
+  
+    border: 1px solid rgba(255, 255, 255, 0.932);
+    
+}
